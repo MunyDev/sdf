@@ -70,8 +70,8 @@
   Module.pty = slave;
 
   const stackAddress = 'http://localhost:9999/'; // listened and served by MSW inside browser
-  const stackWorkerFile = location.origin + "/qemu-wasm-demo" + "/images/alpine-x86_64/dist/stack-worker.js";
-  const stackImage = location.origin  + "/qemu-wasm-demo" + "/images/alpine-x86_64/c2w-net-proxy.wasm.gzip";
+  const stackWorkerFile = location.origin + "/sdf" + "/images/alpine-x86_64/dist/stack-worker.js";
+  const stackImage = location.origin  + "/sdf" + "/images/alpine-x86_64/c2w-net-proxy.wasm.gzip";
   Module['websocket'] = {
       'url': stackAddress
   };
