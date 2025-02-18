@@ -2,8 +2,8 @@ if (typeof Module === 'undefined') {
     Module = {};
 }
 Module['arguments'] = [
-    '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=500',
-    '-L', '/pack-rom/',
+    '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=500,thread=multi',
+    '-L', '/pack-rom/', '-smp', '4,sockets=4'
     '-nic', 'none',
     '-kernel', '/pack-kernel/vmlinuz-virt',
     '-initrd', '/pack-initramfs/initramfs-virt',
