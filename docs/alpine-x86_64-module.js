@@ -1,6 +1,7 @@
 if (typeof Module === 'undefined') {
     Module = {};
 }
+onerror=alert;
 Module['arguments'] = [
     '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=500,thread=multi',
     '-L', '/pack-rom/', '-smp', '4,sockets=4'
