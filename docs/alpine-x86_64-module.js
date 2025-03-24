@@ -25,7 +25,7 @@ XMLHttpRequest = function (...args) {
 
     let o = new oldXHR(...args);
     o.onprogress = log;
-    
+    return o;
 }
 Module['locateFile'] = function(path, prefix) {
     return '/sdf/images/alpine-x86_64/' + path;
