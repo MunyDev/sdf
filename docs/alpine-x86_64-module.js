@@ -19,7 +19,7 @@ Module['arguments'] = [
 Module['locateFile'] = function(path, prefix) {
     let tar = document.createElement('textarea');
 document.body.appendChild(tar);
-    tar.value += "loading";
+    tar.value += "loading" + path;
     return '/sdf/images/alpine-x86_64/' + path;
 };
 Module['mainScriptUrlOrBlob'] = '/sdf/images/alpine-x86_64/out.js'
