@@ -22,7 +22,7 @@ function log(e) {
     tar.value+=e.loaded;
 }
 XMLHttpRequest = function (...args) {
-
+    tar.value += JSON.stringify(args);
     let o = new oldXHR(...args);
     o.onprogress = log;
     return o;
