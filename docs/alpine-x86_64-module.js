@@ -3,8 +3,8 @@ if (typeof Module === 'undefined') {
 }
 onerror=alert;
 Module['arguments'] = [
-    '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=500,thread=multi',
-    '-L', '/pack-rom/', '-smp', '4,sockets=4',
+    '-nographic', '-M', 'pc', '-m', '512M',
+    '-L', '/pack-rom/',
     '-nic', 'none',
     '-kernel', '/pack-kernel/vmlinuz-virt',
     '-initrd', '/pack-initramfs/initramfs-virt',
