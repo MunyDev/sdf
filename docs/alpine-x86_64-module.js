@@ -3,7 +3,7 @@ if (typeof Module === 'undefined') {
 }
 onerror=alert;
 Module['arguments'] = [
-    '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=2048',
+    '-nographic', '-M', 'pc', '-m', '512M', '-accel', 'tcg,tb-size=1000',
     '-L', '/pack-rom/',
     '-nic', 'none',
     '-kernel', '/pack-kernel/vmlinuz-virt',
